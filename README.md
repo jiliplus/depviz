@@ -34,6 +34,8 @@ depviz 会把 Go 模块的依赖关系进可视化处理。
 
 - [安装与更新](#%e5%ae%89%e8%a3%85%e4%b8%8e%e6%9b%b4%e6%96%b0)
 - [选项](#%e9%80%89%e9%a1%b9)
+- [说明](#%e8%af%b4%e6%98%8e)
+	- [颜色](#%e9%a2%9c%e8%89%b2)
 
 ## 安装与更新
 
@@ -44,3 +46,15 @@ go get -u github.com/jujili/depviz
 ```
 
 ## 选项
+
+<https://graphviz.gitlab.io/_pages/doc/info/attrs.html>
+
+## 说明
+
+### 颜色
+
+depviz 对不同种类的模块标记不同的颜色。
+
+- 绿色：Go 标准模块。
+- 蓝色：当前模块或忽略了前缀的模块。
+- 黄色：其他模块。
