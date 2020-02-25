@@ -8,10 +8,8 @@
 
 ### 添加
 
-- 添加了 `ewma` 的计算
-
-[最新更改]: https://github.com/jujili/ta/compare/v0.0.0...HEAD
-<!-- [0.1.0]: https://github.com/jujili/ta/compare/v0.0.0...v0.1.0 -->
+[最新更改]: https://github.com/jujili/depviz/compare/v0.0.0...HEAD
+<!-- [0.1.0]: https://github.com/jujili/depviz/compare/v0.0.0...v0.1.0 -->
 
 <!-- ### 添加 -->
 <!-- ### 变更 -->
