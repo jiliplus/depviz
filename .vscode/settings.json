@@ -2,15 +2,24 @@
 	"cSpell.words": [
 		"EWMA",
 		"Println",
+		"awalterschulze",
 		"backtesting",
+		"bxcodec",
+		"deps",
 		"depviz",
+		"errored",
+		"gographviz",
 		"gomonkey",
 		"idkey",
 		"inited",
 		"jili",
 		"mockgen",
+		"nostdlib",
+		"novendor",
+		"pkgs",
 		"prashantv",
 		"qunwpa",
+		"stoponerror",
 		"tada"
 	]
 }
