@@ -1,6 +1,6 @@
 package main
 
-var includeNode = map[string]string{
+var careNode = map[string]string{
 	"shape":     "box",
 	"style":     "\"rounded,filled,bold\"",
 	"fillcolor": "\"#40e0d0\"",
