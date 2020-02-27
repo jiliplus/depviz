@@ -1,37 +1,21 @@
 package main
 
 import (
-	"flag"
 	"fmt"
-	"os"
+
+	"github.com/awalterschulze/gographviz"
 )
 
 func main() {
-	flag.Parse()
+	prepare()
 
-	fmt.Println(len(os.Args), os.Args)
+	g, _ := gographviz.Read([]byte(`digraph G {}`))
+	g.AddAttr("G", "splines", "ortho")
+	path := getPath()
 
-	fmt.Printf("show standard library: %t\n", *showStandardLib)
-	fmt.Printf("show other library   : %t\n", *showOtherLib)
-	fmt.Printf("help                 : %t\n", *help)
-	fmt.Printf("short path           : %t\n", shortPath)
-	fmt.Println()
-	fmt.Printf("interested dir = %v\n", *interestedDirs)
-	fmt.Printf("delete dir = %v\n", *deleteDirs)
+	dfs(path, "", g)
 
-	if *help || len(os.Args) < 2 {
-		usage()
-		os.Exit(0)
-	}
-
-}
-
-func usage() {
-	// TODO: 添加版本功能
-	fmt.Println(`Usage:depviz [options] [package import path | relative path]
-	
-Options:`)
-	flag.PrintDefaults()
+	fmt.Println(g)
 }
 
 // 	// g := gographviz.NewEscape()
