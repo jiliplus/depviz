@@ -6,10 +6,14 @@
 
 ## [最新更改]
 
+## [v0.1.0]
+
 ### 添加
 
+- 初步完成了设计
+
 [最新更改]: https://github.com/jujili/depviz/compare/v0.0.0...HEAD
-<!-- [0.1.0]: https://github.com/jujili/depviz/compare/v0.0.0...v0.1.0 -->
+[v0.1.0]: https://github.com/jujili/depviz/compare/v0.0.0...v0.1.0
 
 <!-- ### 添加 -->
 <!-- ### 变更 -->
