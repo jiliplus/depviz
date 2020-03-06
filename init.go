@@ -60,14 +60,6 @@ func prepare() {
 
 	isDeleted = makeDict(deleteStr)
 
-	// fmt.Printf("show standard library: %t\n", *showStandardLib)
-	// fmt.Printf("show other library   : %t\n", *showOtherLib)
-	// fmt.Printf("help                 : %t\n", *help)
-	// fmt.Printf("short path           : %t\n", showShortName)
-	// fmt.Println()
-	// fmt.Printf("interested dir = %v\n", *interestedStr)
-	// fmt.Printf("delete dir = %v\n", *deleteStr)
-
 	if *help || len(os.Args) < 2 {
 		usage()
 		os.Exit(0)
